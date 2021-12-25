@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVYlx0jD8aFQ-RC9nN_xetzVKET_Dah1br_g&usqp=CAU"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section class="main">
+        <div class="input">
+            <input type="text" id="input" placeholder="0"/>
+        </div>
+        <div class="btn-area">
+            <div class="line">
+                <input type="button" value="7" class="btn" onclick="calculate(7)"/>
+                <input type="button" value="8" class="btn" onclick="calculate(8)"/>
+                <input type="button" value="9" class="btn" onclick="calculate(9)"/>
+                <input type="button" value="+" class="operator" onclick="calculate(this.value)"/>
+            </div>
+            <div class="line">
+                <input type="button" value="4" class="btn" onclick="calculate(4)"/>
+                <input type="button" value="5" class="btn" onclick="calculate(5)"/>
+                <input type="button" value="6" class="btn" onclick="calculate(6)"/>
+                <input type="button" value="-" class="operator" onclick="calculate(this.value)"/>
+            </div>
+            <div class="line">
+                <input type="button" value="1" class="btn" onclick="calculate(1)"/>
+                <input type="button" value="2" class="btn" onclick="calculate(2)"/>
+                <input type="button" value="3" class="btn" onclick="calculate(3)"/>
+                <input type="button" value="*" class="operator" onclick="calculate(this.value)"/>
+            </div>
+            <div class="line">
+                <input type="button" value="0" class="btn" onclick="calculate(0)"/>
+                <input type="button" value="00" class="btn" onclick="calculate(00)"/>
+                <input type="button" value="." class="btn"/>
+                <input type="button" value="/" class="operator" onclick="calculate(this.value)"/>
+            </div>
+            <div class="line">
+               
+                <input type="button" value="c" class="operators" onclick="document.getElementById('input').value = ' '" />
+                <input type="button" value="=" class="operators" onclick="document.getElementById('input').value = eval(document.getElementById('input').value)"/>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
